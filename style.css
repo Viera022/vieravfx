@@ -127,9 +127,9 @@ button, input, select, textarea {
 }
 
 .serif-text {
-    font-family: 'Instrument Serif', serif;
+    font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: none;
     letter-spacing: normal;
 }
