@@ -27,14 +27,18 @@
             </a>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="#showreel" class="nav-link" id="link-showreel">Showreel</a></li>
-                    <li><a href="#portfolio" class="nav-link" id="link-portfolio">Portfolio</a></li>
-                    <li><a href="#workflow" class="nav-link" id="link-workflow">Workflow</a></li>
-                    <li><a href="#testimonials" class="nav-link" id="link-testimonials">Client Love</a></li>
-                    <li><a href="#contact" class="nav-link" id="link-contact">Start a Project</a></li>
+                    <li><a href="#showreel" class="nav-link" id="link-showreel" data-i18n="nav-showreel">Showreel</a></li>
+                    <li><a href="#portfolio" class="nav-link" id="link-portfolio" data-i18n="nav-portfolio">Portfolio</a></li>
+                    <li><a href="#workflow" class="nav-link" id="link-workflow" data-i18n="nav-workflow">Workflow</a></li>
+                    <li><a href="#testimonials" class="nav-link" id="link-testimonials" data-i18n="nav-testimonials">Client Love</a></li>
+                    <li><a href="#contact" class="nav-link" id="link-contact" data-i18n="nav-contact">Start a Project</a></li>
                 </ul>
             </nav>
-            <a href="#contact" class="btn btn-primary btn-sm" id="header-cta">
+            <button id="lang-toggle" class="lang-toggle-btn" aria-label="Change language / Mudar idioma">
+                <span class="lang-text">PT</span>
+                <i class="fa-solid fa-globe"></i>
+            </button>
+            <a href="#contact" class="btn btn-primary btn-sm" id="header-cta" data-i18n="header-cta">
                 <i class="fa-solid fa-bolt"></i> Go Viral
             </a>
             <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
@@ -55,20 +59,16 @@
             </video>
         </div>
         <div class="container hero-container">
-            <span class="hero-tagline" id="hero-badge">VIRAL DESIGN ENGINEER — 100M+ VIEWS GENERATED</span>
-            <h1 class="hero-title" id="hero-main-title">
+            <span class="hero-tagline" id="hero-badge" data-i18n="hero-subtitle">VIRAL DESIGN ENGINEER — 100M+ VIEWS GENERATED</span>
+            <h1 class="hero-title" id="hero-main-title" data-i18n="hero-title">
                 VIRAL SHORT-FORM VIDEOS THAT KEEP <span class="gradient-text serif-text">Viewers Hooked</span>
             </h1>
-            <p class="hero-subtitle" id="hero-desc">
+            <p class="hero-subtitle" id="hero-desc" data-i18n="hero-desc">
                 High-retention editing, custom sound design, speed ramping, and dynamic captions engineered to dominate TikTok, Reels, and YouTube Shorts.
             </p>
             <div class="hero-actions">
-                <a href="#showreel" class="btn btn-primary" id="hero-cta-showreel">
-                    <i class="fa-solid fa-play"></i> Watch Showreel
-                </a>
-                <a href="#portfolio" class="btn btn-secondary" id="hero-cta-work">
-                    Explore Reels <i class="fa-solid fa-arrow-right"></i>
-                </a>
+                <a href="#showreel" class="btn btn-primary" id="hero-cta-showreel" data-i18n="btn-watch-showreel"><i class="fa-solid fa-play"></i> Watch Showreel</a>
+                <a href="#portfolio" class="btn btn-secondary" id="hero-cta-reels" data-i18n="btn-explore-reels">Explore Reels <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -83,9 +83,9 @@
     <section class="showreel-section" id="showreel">
         <div class="container">
             <div class="section-header text-center">
-                <span class="subtitle-badge">THE SHOWREEL</span>
-                <h2 class="section-title">2026 Short-Form Reel</h2>
-                <p class="section-desc">A vertical 30-second compilation showing hooks, dynamic motion layouts, pacing, sound effects, and retention tricks.</p>
+                <span class="subtitle-badge" data-i18n="showreel-badge">THE SHOWREEL</span>
+                <h2 class="section-title" data-i18n="showreel-title">2026 Short-Form Reel</h2>
+                <p class="section-desc" data-i18n="showreel-desc">A vertical 30-second compilation showing hooks, dynamic motion layouts, pacing, sound effects, and retention tricks.</p>
             </div>
             
             <div class="showreel-phone-wrapper">
@@ -134,18 +134,18 @@
     <section class="portfolio-section" id="portfolio">
         <div class="container">
             <div class="section-header">
-                <span class="subtitle-badge">PORTFOLIO</span>
-                <h2 class="section-title">Featured Reels</h2>
-                <p class="section-desc">Filter through recent high-performance vertical clips by editing style.</p>
+                <span class="subtitle-badge" data-i18n="portfolio-badge">PORTFOLIO</span>
+                <h2 class="section-title" data-i18n="portfolio-title">Featured Reels</h2>
+                <p class="section-desc" data-i18n="portfolio-desc">Filter through recent high-performance vertical clips by editing style.</p>
             </div>
 
             <!-- Category Filters -->
             <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
-                <button class="filter-btn" data-filter="hooks" id="filter-hooks">Hooks & Motion</button>
-                <button class="filter-btn" data-filter="captions" id="filter-captions">Dynamic Captions</button>
-                <button class="filter-btn" data-filter="ads" id="filter-ads">Short Ads</button>
-                <button class="filter-btn" data-filter="gaming" id="filter-gaming">Gaming / Hype</button>
+                <button class="filter-btn active" data-filter="all" id="filter-all" data-i18n="filter-all">All Projects</button>
+                <button class="filter-btn" data-filter="motion" id="filter-hooks" data-i18n="filter-hooks">Motion Design</button>
+                <button class="filter-btn" data-filter="captions" id="filter-captions" data-i18n="filter-captions">Dynamic Captions</button>
+                <button class="filter-btn" data-filter="ads" id="filter-ads" data-i18n="filter-ads">Short Ads</button>
+                <button class="filter-btn" data-filter="gaming" id="filter-gaming" data-i18n="filter-gaming">Gaming / Hype</button>
             </div>
 
             <!-- Portfolio Grid (9:16 Cards) -->
@@ -161,10 +161,10 @@
                         <span class="project-duration">00:15</span>
                     </div>
                     <div class="portfolio-content">
-                        <span class="project-tag">Motion Design</span>
-                        <h3 class="project-title">AI Feature Animation</h3>
-                        <p class="project-description">Sleek keyframe transitions, dynamic typography overlays, and custom graphics styled to explain complex metrics.</p>
-                        <button class="btn-text open-video-btn" data-video-url="assets/reels_demo_1.mp4" data-title="AI Feature Animation">
+                        <span class="project-tag" data-i18n="p1-tag">Motion Design</span>
+                        <h3 class="project-title" data-i18n="p1-title">AI Feature Animation</h3>
+                        <p class="project-description" data-i18n="p1-desc">Sleek keyframe transitions, dynamic typography overlays, and custom graphics styled to explain complex metrics.</p>
+                        <button class="btn-text open-video-btn" data-video-url="assets/reels_demo_1.mp4" data-title="AI Feature Animation" data-i18n="btn-watch-reel">
                             Watch Reel <i class="fa-solid fa-chevron-right"></i>
                         </button>
                     </div>
@@ -178,10 +178,10 @@
                         <span class="project-duration">01:00</span>
                     </div>
                     <div class="portfolio-content">
-                        <span class="project-tag">Dynamic Captions</span>
-                        <h3 class="project-title">Simple Real Estate Video</h3>
-                        <p class="project-description">High-retention real estate reel. Rhythmic pacing, bold captions, and clean grading to drive buyer leads.</p>
-                        <button class="btn-text open-video-btn" data-video-url="assets/reels_demo_2.mp4" data-title="Simple Real Estate Video">
+                        <span class="project-tag" data-i18n="p2-tag">Dynamic Captions</span>
+                        <h3 class="project-title" data-i18n="p2-title">Real Estate</h3>
+                        <p class="project-description" data-i18n="p2-desc">High-retention real estate reel. Rhythmic pacing, bold captions, and clean grading to drive buyer leads.</p>
+                        <button class="btn-text open-video-btn" data-video-url="assets/reels_demo_2.mp4" data-title="Real Estate" data-i18n="btn-watch-reel">
                             Watch Reel <i class="fa-solid fa-chevron-right"></i>
                         </button>
                     </div>
@@ -197,10 +197,10 @@
                         <span class="project-duration">00:20</span>
                     </div>
                     <div class="portfolio-content">
-                        <span class="project-tag">Short Ad</span>
-                        <h3 class="project-title">Fitness Energy Drink</h3>
-                        <p class="project-description">High-energy speed ramping, sound effects layering, and flashing text hooks to boost CTR.</p>
-                        <button class="btn-text open-video-btn" data-video-url="https://assets.mixkit.co/videos/preview/mixkit-woman-doing-jumping-jacks-in-slow-motion-42298-large.mp4" data-title="Fitness Energy Drink">
+                        <span class="project-tag" data-i18n="p3-tag">Short Ad</span>
+                        <h3 class="project-title" data-i18n="p3-title">Fitness Energy Drink</h3>
+                        <p class="project-description" data-i18n="p3-desc">High-energy speed ramping, sound effects layering, and flashing text hooks to boost CTR.</p>
+                        <button class="btn-text open-video-btn" data-video-url="https://assets.mixkit.co/videos/preview/mixkit-woman-doing-jumping-jacks-in-slow-motion-42298-large.mp4" data-title="Fitness Energy Drink" data-i18n="btn-watch-reel">
                             Watch Reel <i class="fa-solid fa-chevron-right"></i>
                         </button>
                     </div>
@@ -216,10 +216,10 @@
                         <span class="project-duration">00:45</span>
                     </div>
                     <div class="portfolio-content">
-                        <span class="project-tag">Gaming / Hype</span>
-                        <h3 class="project-title">Pro E-Sports Clutch</h3>
-                        <p class="project-description">Glitch overlays, screen shakes, beat-synced highlights, and sound design impacts.</p>
-                        <button class="btn-text open-video-btn" data-video-url="https://assets.mixkit.co/videos/preview/mixkit-young-gamer-reacts-with-excitement-while-playing-video-games-41829-large.mp4" data-title="Pro E-Sports Clutch">
+                        <span class="project-tag" data-i18n="p4-tag">Gaming / Hype</span>
+                        <h3 class="project-title" data-i18n="p4-title">Pro E-Sports Clutch</h3>
+                        <p class="project-description" data-i18n="p4-desc">Glitch overlays, screen shakes, beat-synced highlights, and sound design impacts.</p>
+                        <button class="btn-text open-video-btn" data-video-url="https://assets.mixkit.co/videos/preview/mixkit-young-gamer-reacts-with-excitement-while-playing-video-games-41829-large.mp4" data-title="Pro E-Sports Clutch" data-i18n="btn-watch-reel">
                             Watch Reel <i class="fa-solid fa-chevron-right"></i>
                         </button>
                     </div>
@@ -235,10 +235,10 @@
                         <span class="project-duration">00:12</span>
                     </div>
                     <div class="portfolio-content">
-                        <span class="project-tag">Hooks & Motion</span>
-                        <h3 class="project-title">Creator Hype Intro</h3>
-                        <p class="project-description">Sticker animations, zoom hooks, and seamless visual loops to increase completion rate.</p>
-                        <button class="btn-text open-video-btn" data-video-url="https://assets.mixkit.co/videos/preview/mixkit-cinematic-shot-of-a-dj-mixing-music-42289-large.mp4" data-title="Creator Hype Intro">
+                        <span class="project-tag" data-i18n="p5-tag">Hooks & Motion</span>
+                        <h3 class="project-title" data-i18n="p5-title">Creator Hype Intro</h3>
+                        <p class="project-description" data-i18n="p5-desc">Sticker animations, zoom hooks, and seamless visual loops to increase completion rate.</p>
+                        <button class="btn-text open-video-btn" data-video-url="https://assets.mixkit.co/videos/preview/mixkit-cinematic-shot-of-a-dj-mixing-music-42289-large.mp4" data-title="Creator Hype Intro" data-i18n="btn-watch-reel">
                             Watch Reel <i class="fa-solid fa-chevron-right"></i>
                         </button>
                     </div>
@@ -254,10 +254,10 @@
                         <span class="project-duration">00:15</span>
                     </div>
                     <div class="portfolio-content">
-                        <span class="project-tag">Short Ad</span>
-                        <h3 class="project-title">SaaS Web Tool Promo</h3>
-                        <p class="project-description">Direct-response UI zoom-ins, cursor click effects, and fast-paced text formatting.</p>
-                        <button class="btn-text open-video-btn" data-video-url="https://assets.mixkit.co/videos/preview/mixkit-glowing-digital-network-lines-background-43093-large.mp4" data-title="SaaS Web Tool Promo">
+                        <span class="project-tag" data-i18n="p6-tag">Short Ad</span>
+                        <h3 class="project-title" data-i18n="p6-title">SaaS Web Tool Promo</h3>
+                        <p class="project-description" data-i18n="p6-desc">Direct-response UI zoom-ins, cursor click effects, and fast-paced text formatting.</p>
+                        <button class="btn-text open-video-btn" data-video-url="https://assets.mixkit.co/videos/preview/mixkit-glowing-digital-network-lines-background-43093-large.mp4" data-title="SaaS Web Tool Promo" data-i18n="btn-watch-reel">
                             Watch Reel <i class="fa-solid fa-chevron-right"></i>
                         </button>
                     </div>
@@ -271,9 +271,9 @@
     <section class="workflow-section" id="workflow">
         <div class="container">
             <div class="section-header text-center">
-                <span class="subtitle-badge">THE RETENTION FORMULA</span>
-                <h2 class="section-title">Engineered to Retain Viewers</h2>
-                <p class="section-desc">Short-form videos require a specific science. Here is how I build clips that stand out in the feed.</p>
+                <span class="subtitle-badge" data-i18n="workflow-badge">THE RETENTION FORMULA</span>
+                <h2 class="section-title" data-i18n="workflow-title">Engineered to Retain Viewers</h2>
+                <p class="section-desc" data-i18n="workflow-desc">Short-form videos require a specific science. Here is how I build clips that stand out in the feed.</p>
             </div>
 
             <div class="workflow-grid">
@@ -283,8 +283,8 @@
                     <div class="workflow-icon-wrap">
                         <i class="fa-solid fa-magnet"></i>
                     </div>
-                    <h3>First 3-Sec Hooks</h3>
-                    <p>Creating immediate visual or audio pattern-interrupts (zoom hooks, custom text, audio cues) to stop the user from scrolling.</p>
+                    <h3 data-i18n="w1-title">First 3-Sec Hooks</h3>
+                    <p data-i18n="w1-desc">Creating immediate visual or audio pattern-interrupts (zoom hooks, custom text, audio cues) to stop the user from scrolling.</p>
                 </div>
 
                 <!-- Core Specialty 2 -->
@@ -292,8 +292,8 @@
                     <div class="workflow-icon-wrap">
                         <i class="fa-solid fa-gauge-high"></i>
                     </div>
-                    <h3>Pacing & Sound FX</h3>
-                    <p>Aggressive rhythmic cuts, speed ramping, Foley integration, and audio whooshes to maintain high engagement every single second.</p>
+                    <h3 data-i18n="w2-title">Pacing & Sound FX</h3>
+                    <p data-i18n="w2-desc">Aggressive rhythmic cuts, speed ramping, Foley integration, and audio whooshes to maintain high engagement every single second.</p>
                 </div>
 
                 <!-- Core Specialty 3 -->
@@ -301,8 +301,8 @@
                     <div class="workflow-icon-wrap">
                         <i class="fa-solid fa-closed-captioning"></i>
                     </div>
-                    <h3>Kinetic Subtitles</h3>
-                    <p>Stylized, high-contrast subtitles styled after viral creators (Alex Hormozi/Ali Abdaal style) to keep users engaged even on mute.</p>
+                    <h3 data-i18n="w3-title">Kinetic Subtitles</h3>
+                    <p data-i18n="w3-desc">Stylized, high-contrast subtitles styled after viral creators (Alex Hormozi/Ali Abdaal style) to keep users engaged even on mute.</p>
                 </div>
 
                 <!-- Core Specialty 4 -->
@@ -310,15 +310,15 @@
                     <div class="workflow-icon-wrap">
                         <i class="fa-solid fa-arrow-rotate-left"></i>
                     </div>
-                    <h3>Infinite Loop Setup</h3>
-                    <p>Arranging the end of the script and final frames to transition seamlessly back to the start, inflating the average view count.</p>
+                    <h3 data-i18n="w4-title">Infinite Loop Setup</h3>
+                    <p data-i18n="w4-desc">Arranging the end of the script and final frames to transition seamlessly back to the start, inflating the average view count.</p>
                 </div>
 
             </div>
 
             <!-- Software Tech Stack Console -->
             <div class="tech-console glass-panel">
-                <h3 class="console-title text-center"><i class="fa-solid fa-terminal"></i> Post-Production Tech Stack</h3>
+                <h3 class="console-title text-center" data-i18n="console-title"><i class="fa-solid fa-terminal"></i> Post-Production Tech Stack</h3>
                 <div class="console-skills">
                     
                     <div class="console-skill">
@@ -339,18 +339,26 @@
 
                     <div class="console-skill">
                         <div class="skill-info">
-                            <span class="skill-name"><i class="fa-solid fa-square-check"></i> CapCut Pro / Premiere Subtitling</span>
-                            <span class="skill-percent">95%</span>
+                            <span class="skill-name" data-i18n="tech-ai"><i class="fa-solid fa-square-check"></i> AI Video & Audio Tools (ElevenLabs / Topaz / Runway)</span>
+                            <span class="skill-percent">90%</span>
                         </div>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                     </div>
 
                     <div class="console-skill">
                         <div class="skill-info">
-                            <span class="skill-name"><i class="fa-solid fa-square-check"></i> DaVinci Resolve (Color Grading)</span>
+                            <span class="skill-name" data-i18n="tech-davinci"><i class="fa-solid fa-square-check"></i> DaVinci Resolve (Color Grading)</span>
                             <span class="skill-percent">85%</span>
                         </div>
                         <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                    </div>
+
+                    <div class="console-skill">
+                        <div class="skill-info">
+                            <span class="skill-name" data-i18n="tech-remotion"><i class="fa-solid fa-square-check"></i> Remotion (React Video Engineering)</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
                     </div>
 
                 </div>
@@ -363,9 +371,9 @@
     <section class="testimonials-section" id="testimonials">
         <div class="container">
             <div class="section-header text-center">
-                <span class="subtitle-badge">CREATOR RESULTS</span>
-                <h2 class="section-title">Proven Engagement</h2>
-                <p class="section-desc">Delivering viral loops, higher completions, and client satisfaction.</p>
+                <span class="subtitle-badge" data-i18n="test-badge">CREATOR RESULTS</span>
+                <h2 class="section-title" data-i18n="test-title">Proven Engagement</h2>
+                <p class="section-desc" data-i18n="test-desc">Delivering viral loops, higher completions, and client satisfaction.</p>
             </div>
 
             <div class="testimonials-grid">
@@ -379,11 +387,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="testimonial-text">"Viera completely transformed our vertical video ads. Average watch time jumped from 4 seconds to 12 seconds, resulting in a 40% reduction in our CAC."</p>
+                    <p class="testimonial-text" data-i18n="t1-text">"Viera completely transformed our vertical video ads. Average watch time jumped from 4 seconds to 12 seconds, resulting in a 40% reduction in our CAC."</p>
                     <div class="testimonial-author">
                         <div class="author-info">
                             <h4 class="author-name">Alex Mercer</h4>
-                            <span class="author-title">Marketing Director, Urban Edge</span>
+                            <span class="author-title" data-i18n="t1-author-title">Marketing Director, Urban Edge</span>
                         </div>
                     </div>
                 </div>
@@ -397,11 +405,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="testimonial-text">"Our TikTok account gained 150k followers in less than 2 months after working with Viera. The speed ramps, custom sound effects, and kinetic subtitles are flawless."</p>
+                    <p class="testimonial-text" data-i18n="t2-text">"Our TikTok account gained 150k followers in less than 2 months after working with Viera. The speed ramps, custom sound effects, and kinetic subtitles are flawless."</p>
                     <div class="testimonial-author">
                         <div class="author-info">
                             <h4 class="author-name">Sarah Jenkins</h4>
-                            <span class="author-title">Fitness Influencer (1.2M followers)</span>
+                            <span class="author-title" data-i18n="t2-author-title">Fitness Influencer (1.2M followers)</span>
                         </div>
                     </div>
                 </div>
@@ -415,11 +423,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="testimonial-text">"The editing is extremely dynamic. The custom loops work so well that many viewers watch our Reels multiple times. Outstanding communication."</p>
+                    <p class="testimonial-text" data-i18n="t3-text">"The editing is extremely dynamic. The custom loops work so well that many viewers watch our Reels multiple times. Outstanding communication."</p>
                     <div class="testimonial-author">
                         <div class="author-info">
                             <h4 class="author-name">David Zhao</h4>
-                            <span class="author-title">Tech Content Creator</span>
+                            <span class="author-title" data-i18n="t3-author-title">Tech Content Creator</span>
                         </div>
                     </div>
                 </div>
@@ -430,19 +438,19 @@
             <div class="stats-banner glass-panel">
                 <div class="stat-item">
                     <span class="stat-number">300+</span>
-                    <span class="stat-label">Reels Delivered</span>
+                    <span class="stat-label" data-i18n="stat-1">Reels Delivered</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">50M+</span>
-                    <span class="stat-label">Viral Views Generated</span>
+                    <span class="stat-label" data-i18n="stat-2">Viral Views Generated</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">45%</span>
-                    <span class="stat-label">Avg. Completion Rate</span>
+                    <span class="stat-label" data-i18n="stat-3">Avg. Completion Rate</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">20+</span>
-                    <span class="stat-label">Creators Scaled</span>
+                    <span class="stat-label" data-i18n="stat-4">Creators Scaled</span>
                 </div>
             </div>
 
@@ -453,15 +461,15 @@
     <section class="contact-section" id="contact">
         <div class="container contact-container">
             <div class="contact-info-panel">
-                <span class="subtitle-badge">LET'S COLLABORATE</span>
-                <h2 class="section-title">Ready to dominate the feed?</h2>
-                <p>Have a custom campaign, want to scale your personal brand, or need batch video editing? Leave a message detailing your project scope and reference channels.</p>
+                <span class="subtitle-badge" data-i18n="contact-badge">LET'S COLLABORATE</span>
+                <h2 class="section-title" data-i18n="contact-title">Ready to dominate the feed?</h2>
+                <p data-i18n="contact-desc">Have a custom campaign, want to scale your personal brand, or need batch video editing? Leave a message detailing your project scope and reference channels.</p>
                 
                 <ul class="contact-details">
                     <li>
                         <i class="fa-solid fa-envelope"></i>
                         <div>
-                            <h4>Email Me</h4>
+                            <h4 data-i18n="contact-email-title">Email Me</h4>
                             <a href="mailto:viera@visualsediting.com">viera@visualsediting.com</a>
                         </div>
                     </li>
@@ -475,8 +483,8 @@
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
                         <div>
-                            <h4>Location</h4>
-                            <p>Remote / Global Bookings</p>
+                            <h4 data-i18n="contact-location-title">Location</h4>
+                            <p data-i18n="contact-location-desc">Remote / Global Bookings</p>
                         </div>
                     </li>
                 </ul>
@@ -494,30 +502,30 @@
                 <form id="contact-form">
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="name">Your Name</label>
+                            <label for="name" data-i18n="form-name">Your Name</label>
                             <input type="text" id="name" name="name" required placeholder="John Doe">
                         </div>
                         <div class="form-group">
-                            <label for="email">Your Email</label>
+                            <label for="email" data-i18n="form-email">Your Email</label>
                             <input type="email" id="email" name="email" required placeholder="john@example.com">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="project-type">Project Format</label>
+                        <label for="project-type" data-i18n="form-format">Project Format</label>
                         <select id="project-type" name="project-type" required>
-                            <option value="" disabled selected>Select format</option>
-                            <option value="reels">TikTok / Instagram Reels Batch</option>
-                            <option value="ads">Short Form Video Ads</option>
-                            <option value="channel">Continuous Channel Editing</option>
-                            <option value="other">Other Collaboration</option>
+                            <option value="" disabled selected data-i18n="form-select">Select format</option>
+                            <option value="reels" data-i18n="form-option-batch">TikTok / Instagram Reels Batch</option>
+                            <option value="ads" data-i18n="form-option-ads">Short Form Video Ads</option>
+                            <option value="channel" data-i18n="form-option-channel">Continuous Channel Editing</option>
+                            <option value="other" data-i18n="form-option-other">Other Collaboration</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="message">Project Details & References</label>
+                        <label for="message" data-i18n="form-details">Project Details & References</label>
                         <textarea id="message" name="message" rows="5" required placeholder="Paste reference TikTok/Reels links, details on monthly volume, deadliness, etc..."></textarea>
                     </div>
                     
-                    <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                    <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn" data-i18n="form-submit">
                         Pitch Project <i class="fa-solid fa-bolt"></i>
                     </button>
                     
@@ -530,7 +538,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-container text-center">
-            <p>&copy; 2026 Viera Visuals. All rights reserved. Engineering high-retention content worldwide.</p>
+            <p data-i18n="footer-text">&copy; 2026 Viera Visuals. All rights reserved. Engineering high-retention content worldwide.</p>
         </div>
     </footer>
 
